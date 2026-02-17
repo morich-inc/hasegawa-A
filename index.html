@@ -3,199 +3,553 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>長谷川彩子 様 へのご紹介企業 | morich</title>
+    <title>長谷川彩子 様 | Personalized Career Path</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Noto Sans JP', sans-serif; color: #333; line-height: 1.8; }
+        body { font-family: 'Noto Sans JP', sans-serif; word-break: break-all; }
         .morich-red { color: #E60012; }
         .bg-morich-red { background-color: #E60012; }
         .border-morich-red { border-color: #E60012; }
+        .morich-highlight { border-left: 4px solid #E60012; background-color: #fdf2f2; }
         .corporate-overview { background-color: #f8fafc; border: 1px solid #e2e8f0; }
-        .morich-highlight { background-color: #fff5f5; border-left: 6px solid #E60012; }
-        .job-card { background-color: #ffffff; border: 1px solid #e2e8f0; border-top: 4px solid #475569; }
-        .sticky-nav { position: sticky; top: 0; z-index: 50; background: rgba(255, 255, 255, 0.98); border-bottom: 1px solid #eee; }
-        html { scroll-behavior: smooth; }
-        h3 { border-left: 4px solid #E60012; padding-left: 12px; margin-top: 2rem; margin-bottom: 1rem; font-weight: bold; font-size: 1.25rem; }
-        .section-title { font-size: 2rem; font-weight: 900; line-height: 1.2; margin-bottom: 1.5rem; }
-        .link-list a { display: block; color: #2563eb; font-weight: bold; text-decoration: underline; margin-bottom: 0.5rem; }
-        .link-list a:hover { color: #1e40af; }
+        .nav-link:hover { color: #E60012; text-decoration: underline; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
 
-    <header class="bg-white py-8 shadow-sm">
-        <div class="max-w-5xl mx-auto px-4 flex flex-col items-center">
-            <img src="morich_logo.jpg" alt="morich" class="h-16 mb-6">
-            <h1 class="text-2xl md:text-3xl font-black text-center">長谷川彩子 様 Personalized Career Path</h1>
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <img src="morich_logo.jpg" alt="morich logo" class="h-10">
+            <div class="text-right">
+                <p class="text-xs text-gray-500">Candidate Only</p>
+                <p class="font-bold">長谷川彩子 様</p>
+            </div>
         </div>
     </header>
 
-    <nav class="sticky-nav py-4">
-        <div class="max-w-5xl mx-auto px-4">
-            <div class="flex flex-wrap gap-2 justify-center">
-                <a href="#c1" class="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded text-xs font-bold transition">1. CUC</a>
-                <a href="#c2" class="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded text-xs font-bold transition">2. ドクターズ</a>
-                <a href="#c3" class="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded text-xs font-bold transition">3. ZUU</a>
-                <a href="#c4" class="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded text-xs font-bold transition">4. アスエネ</a>
-                <a href="#c5" class="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded text-xs font-bold transition">5. WOVN</a>
-                <a href="#c6" class="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded text-xs font-bold transition">6. M&A総研</a>
-                <a href="#c7" class="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded text-xs font-bold transition">7. ログラス</a>
-                <a href="#c8" class="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded text-xs font-bold transition">8. アンバー</a>
+    <main class="container mx-auto px-4 py-8 max-w-5xl">
+        
+        <section class="mb-12 bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+            <h2 class="text-lg font-bold mb-4 flex items-center">
+                <span class="bg-morich-red text-white px-2 py-1 rounded mr-2 text-sm">INDEX</span> 紹介企業一覧
+            </h2>
+            <nav class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <a href="#company-1" class="nav-link text-sm font-medium">1. 株式会社シーユーシー</a>
+                <a href="#company-2" class="nav-link text-sm font-medium">2. 株式会社アンバー・アセット・マネジメント</a>
+                <a href="#company-3" class="nav-link text-sm font-medium">3. ドクターズ株式会社</a>
+                <a href="#company-4" class="nav-link text-sm font-medium">4. Wovn Technologies株式会社</a>
+                <a href="#company-5" class="nav-link text-sm font-medium">5. 株式会社M&A総合研究所</a>
+                <a href="#company-6" class="nav-link text-sm font-medium">6. 株式会社ZUU</a>
+                <a href="#company-7" class="nav-link text-sm font-medium">7. 株式会社ログラス</a>
+                <a href="#company-8" class="nav-link text-sm font-medium">8. アスエネ株式会社</a>
+            </nav>
+        </section>
+
+        <section id="company-1" class="mb-20 bg-white p-6 md:p-10 rounded-2xl shadow-md scroll-mt-20">
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-bold border border-gray-300">上場企業</span>
+                <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold border border-red-200">グローバル展開</span>
             </div>
-        </div>
-    </nav>
-
-    <main class="max-w-5xl mx-auto px-4 py-16 space-y-32">
-
-        <section id="c1" class="scroll-mt-24">
-            <h2 class="section-title">株式会社シーユーシー</h2>
-            <div class="corporate-overview p-6 rounded-lg mb-8 text-sm">
-                <table class="w-full">
-                    <tr class="border-b"><th class="w-1/3 text-left py-2">本社住所</th><td class="py-2">東京都港区芝浦3-1-1 msb Tamachi 田町ステーションタワーN 15階</td></tr>
-                    <tr class="border-b"><th class="text-left py-2">上場区分</th><td class="py-2">東証グロース</td></tr>
+            <h2 class="text-3xl md:text-4xl font-black mb-6 leading-tight">株式会社シーユーシー</h2>
+            
+            <div class="corporate-overview p-5 rounded-xl mb-8">
+                <p class="text-xs font-bold text-gray-400 mb-2 tracking-widest uppercase">Corporate Overview</p>
+                <table class="w-full text-sm border-collapse">
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left w-1/3 text-gray-600">本社住所</th>
+                        <td class="py-3">東京都港区芝浦3丁目1−1 msb Tamachi 田町ステーションタワーN 15階</td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left text-gray-600">設立</th>
+                        <td class="py-3">2014年8月</td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left text-gray-600">従業員数</th>
+                        <td class="py-3">連結 3,743名（2024年3月末時点）</td>
+                    </tr>
+                    <tr>
+                        <th class="py-3 text-left text-gray-600">上場区分</th>
+                        <td class="py-3">東証グロース市場（証券コード：9158）</td>
+                    </tr>
                 </table>
             </div>
-            <div class="prose max-w-none text-gray-700 mb-8">
-                <p>東証プライム上場エムスリー社のグループ企業。「医療という希望をつくる」をミッションに掲げ、国内外の医療機関に対し経営コンサルティング／運営支援を行っています。超高齢社会という日本が直面する最大の医療課題を“持続可能”な社会システムとして再構築することを目指し、2014年に創業されました。<br>主軸事業は、国内外における病院経営支援と業務委託です。日本国内では、医療機関のご支援からスタートし、現在は訪問看護やホスピス介護へと裾野を広げ、医療機関の方々も含めると1万人を超える規模に達しています。国内だけでも約6,000名の従業員を抱える組織へと成長しました。
-さらに、成長のエンジンはグローバルにあります。特に米国では既に34箇所のクリニックを経営し、約250名の従業員がいます。これをM&Aを通じてさらに拡大し、収益性の高い新たな診療科目を展開するため、積極的に投資を行っている状況です。<br>現在は、病院経営を一括で引き受け、月次や事業計画まで深く関与することで、ドクターが不得手とする経営面を完全に補完する構造を確立しています。国内では株式会社が医療法人を直接経営できないという法的な制約があるため、人や理事会を通じて実質的な共同経営体制を築くという、テクニカルな経営モデルを採用しています。
-この盤石な基盤に加え、今後は高齢者向けケアビジネスへの拡大や、AI・DXを活用した経営効率化（米国では予約受付や診療記録の自動化を導入済み）を進め、「ヘルスケア総合カンパニー化」を目指しています。
-<br>◆海外展開もあり、米国約30拠点、ベトナム1拠点。<br>◆従業員数は約3,743名（連結／2024年3月末時点）。<br>◆連結売上収益は、2022/3期 353億円、2023/3期 352億円、2024/3期 330億円。
+
+            <div class="mb-8 whitespace-pre-wrap">東証プライム上場エムスリー社のグループ企業。「医療という希望をつくる」をミッションに掲げ、国内外の医療機関に対し経営コンサルティング／運営支援を行っています。超高齢社会という日本が直面する最大の医療課題を“持続可能”な社会システムとして再構築することを目指し、2014年に創業されました。
+
+主軸事業は、国内外における病院経営支援と業務委託です。日本国内では、医療機関のご支援からスタートし、現在は訪問看護やホスピス介護へと裾野を広げ、医療機関の方々も含めると1万人を超える規模に達しています。国内だけでも約6,000名の従業員を抱える組織へと成長しました。
+さらに、成長のエンジンはグローバルにあります。特に米国では既に34箇所のクリニックを経営し、約250名の従業員がいます。これをM&Aを通じてさらに拡大し、収益性の高い新たな診療科目を展開するため、積極的に投資を行っている状況です。</div>
+
+            <div class="morich-highlight p-6 rounded-r-xl mb-8">
+                <h3 class="font-bold text-morich-red mb-3 flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    morichオススメPoint
+                </h3>
+                <div class="text-sm font-bold leading-relaxed">
+                    ★経営陣リレーション<br>
+                    ★過去複数名入社実績アリ<br><br>
+                    医療機関の経営支援という非常に社会的意義が高く、かつ「実質的な共同経営」という難易度の高いビジネスモデルを展開しています。経営視点での業務経験を圧倒的に積める環境であり、若手登用も非常に積極的なエネルギッシュな社風です。
+                </div>
             </div>
-            <div class="morich-highlight p-6 mb-8">
-                <h3 class="font-bold text-lg mb-2 morich-red border-none p-0">morichオススメPoint</h3>
-                <p class="text-sm">★経営陣リレーション ★過去複数名入社実績アリ。支援先はすべて黒字化。経営層と若手の距離が近く、意思決定が全社に開示される透明性の高い組織です。</p>
+
+            <div class="bg-gray-50 p-6 rounded-xl mb-8">
+                <h4 class="font-bold mb-3">代表プロフィール</h4>
+                <p class="font-bold text-sm mb-1">代表取締役CEO　濵口慶太 氏</p>
+                <p class="text-sm">1996年名古屋大学経済学部卒業。2003年ミシガン大学MBA修了。リクルート、ジェイ・ウィル・パートナーズ、エムスリーを経て、2014年CUC設立。</p>
             </div>
-            <div class="mb-8">
-                <h3 class="text-xl font-bold mb-4">JOB：グローバルM&A 責任者候補</h3>
-                <div class="job-card p-6 rounded-lg text-sm">グローバル展開を本格化。ベトナム、シンガポール、アメリカを対象にM&AからPMIまでを牽引いただきます。</div>
+
+            <div class="mb-8 border-t border-gray-100 pt-6">
+                <h4 class="font-bold mb-4 text-gray-400 uppercase tracking-widest text-xs">Job Information</h4>
+                <div class="bg-white border-2 border-gray-100 rounded-xl p-6">
+                    <h5 class="text-xl font-bold mb-4">グローバルM&A 責任者候補</h5>
+                    <div class="space-y-4 text-sm">
+                        <p><span class="inline-block bg-black text-white px-2 py-0.5 rounded text-xs mr-2">業務内容</span>医療×経営×グローバルの交差点で、事業拡大を牽引。対象国はベトナム、シンガポール、アメリカ。M&A実務からPMIまで幅広く期待されるポジションです。</p>
+                        <p><span class="inline-block bg-black text-white px-2 py-0.5 rounded text-xs mr-2">勤務地</span>東京（基本出社）</p>
+                    </div>
+                </div>
             </div>
-            <div class="link-list">
-                <a href="https://www.cuc-jpn.com/" target="_blank">▶ 企業サイト</a>
-                <a href="https://note.com/cuc_com/m/med8286f49c8d" target="_blank">▶ CUCの経営理念・事業・カルチャー情報まとめ</a>
-                <a href="https://www.cuc-jpn.com/company/philosophy/" target="_blank">▶ 経営理念・Philosophy</a>
+
+            <div class="flex flex-wrap gap-4">
+                <a href="https://www.cuc-jpn.com/" target="_blank" class="bg-gray-800 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-black transition">Official Site</a>
+                <a href="https://note.com/cuc_com/m/med8286f49c8d" target="_blank" class="border border-gray-300 px-6 py-2 rounded-full text-sm font-bold hover:bg-gray-50 transition">note</a>
+                <a href="https://www.cuc-jpn.com/company/philosophy/" target="_blank" class="border border-gray-300 px-6 py-2 rounded-full text-sm font-bold hover:bg-gray-50 transition">Philosophy</a>
             </div>
         </section>
 
-        <section id="c2" class="scroll-mt-24">
-            <h2 class="section-title">ドクターズ株式会社</h2>
-            <div class="corporate-overview p-6 rounded-lg mb-8 text-sm">
-                <table class="w-full">
-                    <tr class="border-b"><th class="w-1/3 text-left py-2">本社住所</th><td class="py-2">東京都港区芝公園2-3-6 PMO浜松町II 5階</td></tr>
-                    <tr class="border-b"><th class="text-left py-2">上場区分</th><td class="py-2">未上場（IPO準備中）</td></tr>
+        <section id="company-2" class="mb-20 bg-white p-6 md:p-10 rounded-2xl shadow-md scroll-mt-20">
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-bold border border-gray-300">N-4以前</span>
+                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold border border-blue-200">IPO準備中</span>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-black mb-6 leading-tight">株式会社アンバー・アセット・マネジメント</h2>
+            
+            <div class="corporate-overview p-5 rounded-xl mb-8">
+                <p class="text-xs font-bold text-gray-400 mb-2 tracking-widest uppercase">Corporate Overview</p>
+                <table class="w-full text-sm border-collapse">
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left w-1/3 text-gray-600">本社住所</th>
+                        <td class="py-3">東京都千代田区有楽町2丁目10－1 東京交通会館 10F</td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left text-gray-600">設立</th>
+                        <td class="py-3">2014年2月7日</td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left text-gray-600">従業員数</th>
+                        <td class="py-3">非公開</td>
+                    </tr>
+                    <tr>
+                        <th class="py-3 text-left text-gray-600">上場区分</th>
+                        <td class="py-3">未上場</td>
+                    </tr>
                 </table>
             </div>
-            <div class="prose max-w-none text-gray-700 mb-8">
-                <p>「医療×IT×ビジネス」を融合し、医療ヘルスケア領域のDXを総合的に支援。約20万人の医療従事者、約5万件の医療機関、約700名の専門医ネットワークを強みに、疾患領域を限定せず多様なプロジェクトに関われます。NTT、みずほ銀行、キヤノン等と提携。<br>世界のデジタルヘルス市場は今後200兆円規模へ拡大が見込まれ、日本においても少子高齢化で従来産業が縮小傾向にあるなか、デジタルヘルスは成長産業として注目され社会的意義と成長性を兼ね備え、日本の医療構造を本質的に変革していく挑戦に携われます。
-デジタル技術と医療・ヘルスケアを融合させた「デジタルヘルス」分野で、新たな“医療DXインフラ”を創出している企業です。</p>
+
+            <div class="mb-8 whitespace-pre-wrap">「家族に勧められる商品やサービスだけを提供できる会社を創りたい。」との想いから、2014年2月7日創業。 金融機関出身のメンバーを中心に、現在は全国10支社、仲介する預資産910億円(2025年6月末時点)の企業と成長しています。社是「正しい仕事で人を幸せにする」 という想いを全社員が本気で追及し、ビジョン「証券業界を変革し、日本一の金融機関を創造する」の実現を目指しています。
+
+2030年までの東証上場および時価総額1,000億円以上の実現を目指しています。上場時には預かり資産を現在の1,000億円規模から5,000億円規模へと拡大することを目標に掲げています。</div>
+
+            <div class="morich-highlight p-6 rounded-r-xl mb-8">
+                <h3 class="font-bold text-morich-red mb-3">morichオススメPoint</h3>
+                <div class="text-sm font-bold">
+                    証券業界の常識を覆す「顧客本位」を貫くIFA界のリーディングカンパニーです。預かり資産も1,000億円に迫る勢いで、上場を見据えた組織拡大期の今、経営幹部として参画する醍醐味は非常に大きいと言えます。
+                </div>
             </div>
-            <div class="morich-highlight p-6 mb-8">
-                <h3 class="font-bold text-lg mb-2 morich-red border-none p-0">morichオススメPoint</h3>
-                <p class="text-sm">企業評価額は約400億円、国内トップクラスのヘルスケアベンチャー。代表は2500例以上の手術を執刀した脳神経外科医。米国市場を見据えたIPOを最終段階として進めています。</p>
+
+            <div class="bg-gray-50 p-6 rounded-xl mb-8">
+                <h4 class="font-bold mb-3">代表プロフィール</h4>
+                <p class="font-bold text-sm mb-1">代表取締役　友田 行洋氏</p>
+                <p class="text-sm">東京理科大学卒業。大和証券を退職後、独立金融アドバイザリー会社を創業。顧客とアドバイザーが真の信頼関係を築ける会社作りを本気で目指す証券アナリスト(CMA)。</p>
             </div>
-            <div class="mb-8">
-                <h3 class="text-xl font-bold mb-4">JOB：海外M&A担当 メンバー（マネージャー候補）</h3>
-                <div class="job-card p-6 rounded-lg text-sm">グローバル展開を支えるM&A実務。ソーシングから交渉・PMIまで経営陣直下でリード。</div>
+
+            <div class="mb-8 border-t border-gray-100 pt-6">
+                <h4 class="font-bold mb-4 text-gray-400 uppercase tracking-widest text-xs">Job Information</h4>
+                <div class="bg-white border-2 border-gray-100 rounded-xl p-6">
+                    <h5 class="text-xl font-bold mb-4">事業開発</h5>
+                    <div class="space-y-4 text-sm">
+                        <p><span class="inline-block bg-black text-white px-2 py-0.5 rounded text-xs mr-2">業務内容</span>アライアンス戦略（B2B2C）の確立。富裕層を抱える士業・専門家とのネットワーク化による安定的な顧客紹介ルートを開拓・構築します。</p>
+                        <p><span class="inline-block bg-black text-white px-2 py-0.5 rounded text-xs mr-2">応募資格</span>事業会社での経営企画・事業開発経験、またはコンサル出身者。</p>
+                    </div>
+                </div>
             </div>
-            <div class="link-list">
-                <a href="https://doctors-inc.jp/" target="_blank">▶ 企業サイト</a>
+
+            <div class="flex flex-wrap gap-4">
+                <a href="https://ambercorp.co.jp/" target="_blank" class="bg-gray-800 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-black transition">Official Site</a>
             </div>
         </section>
 
-        <section id="c3" class="scroll-mt-24">
-            <h2 class="section-title">株式会社ZUU</h2>
-            <div class="link-list mb-8">
-                <a href="https://zuu.co.jp/" target="_blank">▶ 企業サイト</a>
-                <a href="https://zuu.co.jp/company/info/" target="_blank">▶ 会社概要・インフォメーション</a>
+        <section id="company-3" class="mb-20 bg-white p-6 md:p-10 rounded-2xl shadow-md scroll-mt-20">
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-bold border border-gray-300">IPO準備中</span>
+                <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold border border-green-200">医療DX</span>
             </div>
-            <div class="morich-highlight p-6 mb-8">
-                <h3 class="font-bold text-lg mb-2 morich-red border-none p-0">morichオススメPoint</h3>
-                <p class="text-sm">メディア事業から富裕層向けマーケティング・金融事業へピボットし、再成長フェーズにあります。</p>
-            </div>
-        </section>
-
-        <section id="c4" class="scroll-mt-24">
-            <h2 class="section-title">アスエネ株式会社</h2>
-            <div class="link-list mb-8">
-                <a href="https://corp.asuene.com/company" target="_blank">▶ 企業サイト</a>
-                <a href="https://prtimes.jp/main/html/rd/p/000000598.000058538.html" target="_blank">▶ シリーズCクローズ・累計115億円資金調達ニュース</a>
-            </div>
-            <div class="morich-highlight p-6 mb-8">
-                <h3 class="font-bold text-lg mb-2 morich-red border-none p-0">morichオススメPoint</h3>
-                <p class="text-sm">導入社数3年連続No.1。メガバンクの事業を継承するなど、スタートアップとして異例の規模感でM&Aを成功させています。</p>
-            </div>
-        </section>
-
-        <section id="c5" class="scroll-mt-24">
-            <h2 class="section-title">Wovn Technologies株式会社</h2>
-            <div class="link-list mb-8">
-                <a href="https://wovn.io/ja/" target="_blank">▶ 企業サイト</a>
-                <a href="https://prtimes.jp/main/html/rd/p/000000143.000010446.html" target="_blank">▶ 資金調達ニュース（総額54億円）</a>
-            </div>
-            <div class="morich-highlight p-6 mb-8">
-                <h3 class="font-bold text-lg mb-2 morich-red border-none p-0">morichオススメPoint</h3>
-                <p class="text-sm">最短2年後を目安にIPO準備中。解約率1％未満。社会インフラ企業の多言語化を一手に引き受ける安定基盤です。</p>
-            </div>
-        </section>
-
-        <section id="c6" class="scroll-mt-24">
-            <h2 class="section-title">株式会社M&A総合研究所</h2>
-            <div class="link-list mb-8">
-                <a href="https://masouken.com/" target="_blank">▶ 企業サイト（M&Aプラットフォーム）</a>
-                <a href="https://www.nikkei.com" target="_blank">▶ 日経取材記事</a>
-                <a href="https://forbesjapan.com/articles/detail/33050" target="_blank">▶ フォーブス取材記事</a>
-                <a href="https://mastory.jp" target="_blank">▶ 日本最大級のM&A情報メディア（MASTORY）</a>
-            </div>
-            <div class="morich-highlight p-6 mb-8">
-                <h3 class="font-bold text-lg mb-2 morich-red border-none p-0">morichオススメPoint</h3>
-                <p class="text-sm">創業3年9ヶ月で上場。AIとDXでM&A仲介を革新。優秀な人材には買収した会社のトップとしての道も。社長は非常に任せる方です。</p>
-            </div>
-        </section>
-
-        <section id="c7" class="scroll-mt-24">
-            <h2 class="section-title">株式会社ログラス</h2>
-            <div class="corporate-overview p-6 rounded-lg mb-8 text-sm">
-                <table class="w-full">
-                    <tr class="border-b border-gray-200"><th class="w-1/3 text-left py-2">調達</th><td class="py-2">シリーズBで70億円</td></tr>
-                    <tr class="border-b border-gray-200"><th class="text-left py-2">従業員</th><td class="py-2">160名超</td></tr>
+            <h2 class="text-3xl md:text-4xl font-black mb-6 leading-tight">ドクターズ株式会社</h2>
+            
+            <div class="corporate-overview p-5 rounded-xl mb-8">
+                <p class="text-xs font-bold text-gray-400 mb-2 tracking-widest uppercase">Corporate Overview</p>
+                <table class="w-full text-sm border-collapse">
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left w-1/3 text-gray-600">本社住所</th>
+                        <td class="py-3">東京都港区芝公園2-3-6 PMO浜松町II 5階</td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left text-gray-600">設立</th>
+                        <td class="py-3">2016年（事業開始 2019年10月）</td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left text-gray-600">従業員数</th>
+                        <td class="py-3">50名超（年内70名規模を計画）</td>
+                    </tr>
+                    <tr>
+                        <th class="py-3 text-left text-gray-600">上場区分</th>
+                        <td class="py-3">未上場（米国市場IPO検討中）</td>
+                    </tr>
                 </table>
             </div>
-            <div class="prose max-w-none text-gray-700 space-y-6">
-                <p>「良い景気を作ろう。」をミッションに、「Loglass 経営管理」等のDXサービスを提供。KDDI・味の素・エムスリー等のプライム上場企業に導入されています。2024年に70億円の調達を実施。データとAIで事業成長を加速させています。</p>
+
+            <div class="mb-8 whitespace-pre-wrap">「医療×IT×ビジネス」を融合し、医療ヘルスケア領域のDXを総合的に支援するデジタルヘルス企業。約20万人の医療従事者・約5万件の医療機関・約700名の専門医による国内最大級の医療ネットワークを構築し、産業横断的に新しい医療価値を創出しています。NTT・みずほ銀行・キヤノン・スズケンなど大手企業と共に、医療・ヘルスケア事業の企画から開発、運用までを総合的に支援。</div>
+
+            <div class="morich-highlight p-6 rounded-r-xl mb-8">
+                <h3 class="font-bold text-morich-red mb-3">morichオススメPoint</h3>
+                <div class="text-sm font-bold">
+                    ★IPO準備中<br>
+                    ★過去複数名入社実績アリ<br><br>
+                    東洋経済「すごいベンチャー」選出。企業評価額は約400億円と、国内トップクラスのヘルスケアベンチャーです。現役医師が率いる「ウェットな現場感」とテクノロジーの融合が最大の武器。米国市場IPOも視野に入れた非常にエキサイティングなフェーズです。
+                </div>
             </div>
-            <div class="morich-highlight p-8 my-10">
-                <h3 class="font-bold text-xl mb-4 border-none p-0 morich-red">morichオススメPoint</h3>
-                <p class="text-sm">★IPO準備中。CEO布川氏は投資銀行出身。経営管理という日本企業にとっての「最後のホワイトスペース」を埋めるプロダクトであり、将来性が抜群です。</p>
+
+            <div class="bg-gray-50 p-6 rounded-xl mb-8">
+                <h4 class="font-bold mb-3">代表プロフィール</h4>
+                <p class="font-bold text-sm mb-1">代表取締役 兼 CEO　柳川 貴雄氏</p>
+                <p class="text-sm">脳神経外科専門医として2,500例以上の手術を執刀。2016年に一般社団法人IoMT学会設立、2019年にドクターズ事業開始。現場の課題をITで解決するドクター起業家。</p>
             </div>
-            <div class="link-list mb-8">
-                <a href="https://www.loglass.co.jp/" target="_blank">▶ 企業サイト</a>
-                <a href="https://www.loglass.co.jp/recruit" target="_blank">▶ 採用サイト</a>
-                <a href="https://speakerdeck.com/loglass2019/whats-loglass" target="_blank">▶ 会社紹介資料（Speaker Deck）</a>
-                <a href="https://note.com/loglass_sakamoto/n/n2aaea5974077" target="_blank" class="text-blue-600 font-bold hover:underline">▶ プロダクトビジョン（note）</a>
-                <a href="https://prtimes.jp/main/html/rd/p/000000132.000052025.html" target="_blank">▶ シリーズB 70億円資金調達ニュース</a>
-                <a href="https://ascii.jp/elem/000/004/213/4213226/" target="_blank">▶ ASCII取材記事</a>
+
+            <div class="mb-8 border-t border-gray-100 pt-6">
+                <h4 class="font-bold mb-4 text-gray-400 uppercase tracking-widest text-xs">Job Information</h4>
+                <div class="bg-white border-2 border-gray-100 rounded-xl p-6">
+                    <h5 class="text-xl font-bold mb-4">海外M&A担当 メンバー（マネージャー候補）</h5>
+                    <div class="space-y-4 text-sm">
+                        <p><span class="inline-block bg-black text-white px-2 py-0.5 rounded text-xs mr-2">業務内容</span>グローバル展開を加速させる海外M&A。リサーチから交渉、PMIまで社長直下で一貫してリードします。</p>
+                        <p><span class="inline-block bg-black text-white px-2 py-0.5 rounded text-xs mr-2">必須条件</span>ビジネスレベルの英語、M&A実務または投資・経営企画経験3年以上。</p>
+                        <p><span class="inline-block bg-black text-white px-2 py-0.5 rounded text-xs mr-2">働き方</span>ハイブリッド勤務</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap gap-4">
+                <a href="https://doctors-inc.jp/" target="_blank" class="bg-gray-800 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-black transition">Official Site</a>
             </div>
         </section>
 
-        <section id="c8" class="scroll-mt-24">
-            <h2 class="section-title">株式会社アンバー・アセット・マネジメント</h2>
-            <div class="link-list mb-8">
-                <a href="https://ambercorp.co.jp/" target="_blank">▶ 企業サイト</a>
+        <section id="company-4" class="mb-20 bg-white p-6 md:p-10 rounded-2xl shadow-md scroll-mt-20">
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-bold border border-gray-300">N-2</span>
+                <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-bold border border-purple-200">SaaS / AI</span>
             </div>
-            <div class="morich-highlight p-6 mb-8">
-                <h3 class="font-bold text-lg mb-2 morich-red border-none p-0">morichオススメPoint</h3>
-                <p class="text-sm">IFA業界のフロントランナー。2030年までの上場を目指しており、士業・専門家とのアライアンス戦略を構築する非常に面白いフェーズです。</p>
+            <h2 class="text-3xl md:text-4xl font-black mb-6 leading-tight">Wovn Technologies株式会社</h2>
+            
+            <div class="corporate-overview p-5 rounded-xl mb-8">
+                <p class="text-xs font-bold text-gray-400 mb-2 tracking-widest uppercase">Corporate Overview</p>
+                <table class="w-full text-sm border-collapse">
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left w-1/3 text-gray-600">本社住所</th>
+                        <td class="py-3">東京都港区南青山2-26-1 D-LIFEPLACE南青山9階</td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left text-gray-600">設立</th>
+                        <td class="py-3">2014年3月</td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left text-gray-600">従業員数</th>
+                        <td class="py-3">約110名（20カ国以上の多国籍チーム）</td>
+                    </tr>
+                    <tr>
+                        <th class="py-3 text-left text-gray-600">上場区分</th>
+                        <td class="py-3">未上場（IPO準備中）</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="mb-8 whitespace-pre-wrap">「世界中の人が、すべてのデータに、母国語でアクセスできるようにする」をミッションに、Web サイト・アプリを最大 43 言語に多言語化するソリューション「WOVN.io」を提供。社会インフラ企業等18,000 サイト以上へ導入されています。</div>
+
+            <div class="morich-highlight p-6 rounded-r-xl mb-8">
+                <h3 class="font-bold text-morich-red mb-3">morichオススメPoint</h3>
+                <div class="text-sm font-bold">
+                    ★IPO準備中（最短2年後目安）<br><br>
+                    チャーンレート1%未満という驚異的な安定性を誇るホリゾンタルSaaSです。エンタープライズ企業への導入実績が豊富で、大手出身者も多く活躍しています。グローバルな環境で、CFOの右腕として経営の中核に携わることができます。
+                </div>
+            </div>
+
+            <div class="mb-8 border-t border-gray-100 pt-6">
+                <h4 class="font-bold mb-4 text-gray-400 uppercase tracking-widest text-xs">Job Information</h4>
+                <div class="bg-white border-2 border-gray-100 rounded-xl p-6">
+                    <h5 class="text-xl font-bold mb-4">経営企画・財務戦略マネジャー（VP of Finance 候補）</h5>
+                    <div class="space-y-4 text-sm">
+                        <p><span class="inline-block bg-black text-white px-2 py-0.5 rounded text-xs mr-2">業務内容</span>M&A戦略（ソーシング〜PMI）、IPO準備、エクイティストーリー策定。CFO直下で「右腕」としてファイナンス戦略を牽引。</p>
+                        <p><span class="inline-block bg-black text-white px-2 py-0.5 rounded text-xs mr-2">働き方</span>基本出社 / 副業不可</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap gap-4">
+                <a href="https://wovn.io/ja/" target="_blank" class="bg-gray-800 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-black transition">Official Site</a>
+                <a href="https://prtimes.jp/main/html/rd/p/000000143.000010446.html" target="_blank" class="border border-gray-300 px-6 py-2 rounded-full text-sm font-bold hover:bg-gray-50 transition">Funding News</a>
             </div>
         </section>
 
+        <section id="company-5" class="mb-20 bg-white p-6 md:p-10 rounded-2xl shadow-md scroll-mt-20">
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-bold border border-gray-300">東証プライム</span>
+                <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold border border-red-200">超成長企業</span>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-black mb-6 leading-tight">株式会社M&A総合研究所</h2>
+            
+            <div class="corporate-overview p-5 rounded-xl mb-8">
+                <p class="text-xs font-bold text-gray-400 mb-2 tracking-widest uppercase">Corporate Overview</p>
+                <table class="w-full text-sm border-collapse">
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left w-1/3 text-gray-600">本社住所</th>
+                        <td class="py-3">東京都千代田区丸の内1丁目8-1 丸の内トラストタワーN館18階</td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left text-gray-600">設立</th>
+                        <td class="py-3">2018年10月</td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left text-gray-600">従業員数</th>
+                        <td class="py-3">約250名以上（急増中）</td>
+                    </tr>
+                    <tr>
+                        <th class="py-3 text-left text-gray-600">上場区分</th>
+                        <td class="py-3">東証プライム市場（証券コード：9552）</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="mb-8 whitespace-pre-wrap">創業からわずか4年で時価総額1,000億円を突破した驚異の成長企業。M&A仲介業界にテクノロジー（AI/DX）を取り入れ、圧倒的な効率化とスピードを実現。「譲渡企業完全成功報酬制」という売り手リスクのないモデルで社会課題の解決に挑んでいます。</div>
+
+            <div class="morich-highlight p-6 rounded-r-xl mb-8">
+                <h3 class="font-bold text-morich-red mb-3">morichオススメPoint</h3>
+                <div class="text-sm font-bold">
+                    テクノロジー×M&A仲介という独自ドメインで業界の勢力図を塗り替えています。今後は自社M&Aを通じて数兆円規模の企業体を目指しており、将来的に買収先の経営者として活躍するパスも。圧倒的な報酬水準とスピード感を求める方には最高の環境です。
+                </div>
+            </div>
+
+            <div class="mb-8 border-t border-gray-100 pt-6">
+                <h4 class="font-bold mb-4 text-gray-400 uppercase tracking-widest text-xs">Job Information</h4>
+                <div class="bg-white border-2 border-gray-100 rounded-xl p-6">
+                    <h5 class="text-xl font-bold mb-4">【M&A総研】自社M&A・PMI・経営管理</h5>
+                    <div class="space-y-4 text-sm">
+                        <p><span class="inline-block bg-black text-white px-2 py-0.5 rounded text-xs mr-2">業務内容</span>ホールディングスのプリンシパル投資。案件ソーシング、スキーム策定、実行から投資後のPMI・ハンズオン支援まで一気通貫。</p>
+                        <p><span class="inline-block bg-black text-white px-2 py-0.5 rounded text-xs mr-2">応募資格</span>PEファンド経験3年以上、またはPMI/経営企画経験3年以上。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap gap-4">
+                <a href="https://masouken.com/" target="_blank" class="bg-gray-800 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-black transition">Official Site</a>
+                <a href="https://mastory.jp" target="_blank" class="border border-gray-300 px-6 py-2 rounded-full text-sm font-bold hover:bg-gray-50 transition">M&Aメディア</a>
+            </div>
+        </section>
+
+        <section id="company-6" class="mb-20 bg-white p-6 md:p-10 rounded-2xl shadow-md scroll-mt-20">
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-bold border border-gray-300">東証グロース</span>
+                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold border border-blue-200">Fintech</span>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-black mb-6 leading-tight">株式会社ZUU</h2>
+            
+            <div class="corporate-overview p-5 rounded-xl mb-8">
+                <p class="text-xs font-bold text-gray-400 mb-2 tracking-widest uppercase">Corporate Overview</p>
+                <table class="w-full text-sm border-collapse">
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left w-1/3 text-gray-600">本社住所</th>
+                        <td class="py-3">東京都港区⿇布台 1 丁⽬ 3−1 ⿇布台ヒルズ 森 JP タワー46 階</td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left text-gray-600">設立</th>
+                        <td class="py-3">2013年9月</td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left text-gray-600">従業員数</th>
+                        <td class="py-3">約120名</td>
+                    </tr>
+                    <tr>
+                        <th class="py-3 text-left text-gray-600">上場区分</th>
+                        <td class="py-3">東証グロース市場（証券コード：4387）</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="mb-8 whitespace-pre-wrap">金融領域のDXを推進し、「機会格差を解消し、持続的に挑戦できる世界へ」というパーパスを掲げるフィンテック企業。セールステック事業とフィンテック事業を柱とし、富裕層や経営者向けマーケティング支援を提供しています。</div>
+
+            <div class="morich-highlight p-6 rounded-r-xl mb-8">
+                <h3 class="font-bold text-morich-red mb-3">morichオススメPoint</h3>
+                <div class="text-sm font-bold">
+                    「鬼速PDCA」で知られる冨田社長のもと、圧倒的なスピード感で再成長フェーズにあります。富裕層・経営者という強固な属性基盤を持っており、今後の金融・経済分野での展開は非常に楽しみです。経営体制を強化しており、抜擢・重用の可能性が極めて高い募集です。
+                </div>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-xl mb-8">
+                <h4 class="font-bold mb-3">代表プロフィール</h4>
+                <p class="font-bold text-sm mb-1">代表取締役 冨田和成氏</p>
+                <p class="text-sm">野村證券にて数々の最年少記録を達成後、2013年にZUU創業。ベストセラー『鬼速PDCA』著者。現場と経営の両視点を持ち、日本の金融リテラシー向上に挑むリーダー。</p>
+            </div>
+
+            <div class="mb-8 border-t border-gray-100 pt-6">
+                <h4 class="font-bold mb-4 text-gray-400 uppercase tracking-widest text-xs">Job Information</h4>
+                <div class="bg-white border-2 border-gray-100 rounded-xl p-6">
+                    <h5 class="text-xl font-bold mb-4">経営幹部候補</h5>
+                    <div class="space-y-4 text-sm">
+                        <p><span class="inline-block bg-black text-white px-2 py-0.5 rounded text-xs mr-2">業務内容</span>取締役・執行役員クラス。ビジネスサイドの責任者からコーポレート（CFO/CHRO）まで、ご経験に応じてミッションを柔軟に決定。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap gap-4">
+                <a href="https://zuu.co.jp/" target="_blank" class="bg-gray-800 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-black transition">Official Site</a>
+            </div>
+        </section>
+
+        <section id="company-7" class="mb-20 bg-white p-6 md:p-10 rounded-2xl shadow-md scroll-mt-20">
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-bold border border-gray-300">N-4以前</span>
+                <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-bold border border-orange-200">SaaS / 経営管理</span>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-black mb-6 leading-tight">株式会社ログラス</h2>
+            
+            <div class="corporate-overview p-5 rounded-xl mb-8">
+                <p class="text-xs font-bold text-gray-400 mb-2 tracking-widest uppercase">Corporate Overview</p>
+                <table class="w-full text-sm border-collapse">
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left w-1/3 text-gray-600">本社住所</th>
+                        <td class="py-3">東京都港区三田3-11-24 国際興業三田第2ビル 9階</td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left text-gray-600">設立</th>
+                        <td class="py-3">2019年5月</td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left text-gray-600">従業員数</th>
+                        <td class="py-3">約160名（急成長中）</td>
+                    </tr>
+                    <tr>
+                        <th class="py-3 text-left text-gray-600">上場区分</th>
+                        <td class="py-3">未上場（シリーズB / IPO準備中）</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="mb-8 whitespace-pre-wrap">「良い景気を作ろう。」をミッションに、次世代の経営管理システム「Loglass」を展開。KDDIや味の素などエンタープライズ企業への導入が加速しており、2024年にはシリーズBで70億円を調達。経営データの統合・分析をAIで高度化するプラットフォームを目指しています。</div>
+
+            <div class="morich-highlight p-6 rounded-r-xl mb-8">
+                <h3 class="font-bold text-morich-red mb-3">morichオススメPoint</h3>
+                <div class="text-sm font-bold">
+                    ★IPO準備中<br><br>
+                    投資銀行・経営企画出身の経営陣が、自らの原体験をもとに「経営管理のDX」に挑んでいます。未開拓の巨大市場に対し、コンサルレスで導入可能な高いプロダクト力が武器。M&Aを最重要オプションと位置付けており、事業投資のプロとして手腕を振るえる環境です。
+                </div>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-xl mb-8">
+                <h4 class="font-bold mb-3">代表プロフィール</h4>
+                <p class="font-bold text-sm mb-1">代表取締役CEO 布川友也氏</p>
+                <p class="text-sm">慶應義塾大学卒業後、SMBC日興証券（投資銀行）を経て、GameWithの市場変更を経験。25歳でログラスを創業。「経営管理の負」を熟知する若き精鋭リーダー。</p>
+            </div>
+
+            <div class="mb-8 border-t border-gray-100 pt-6">
+                <h4 class="font-bold mb-4 text-gray-400 uppercase tracking-widest text-xs">Job Information</h4>
+                <div class="bg-white border-2 border-gray-100 rounded-xl p-6">
+                    <h5 class="text-xl font-bold mb-4">【コーポレート】M&A責任者候補</h5>
+                    <div class="space-y-4 text-sm">
+                        <p><span class="inline-block bg-black text-white px-2 py-0.5 rounded text-xs mr-2">業務内容</span>インオーガニックな事業拡大をリード。戦略立案、ソーシング、バリュエーション、DD、PMIまで全フェーズに関与。</p>
+                        <p><span class="inline-block bg-black text-white px-2 py-0.5 rounded text-xs mr-2">必須条件</span>投資銀行、FAS、または事業会社M&A実務3年以上。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap gap-4">
+                <a href="https://www.loglass.co.jp/" target="_blank" class="bg-gray-800 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-black transition">Official Site</a>
+                <a href="https://speakerdeck.com/loglass2019/whats-loglass" target="_blank" class="border border-gray-300 px-6 py-2 rounded-full text-sm font-bold hover:bg-gray-50 transition">Company Deck</a>
+            </div>
+        </section>
+
+        <section id="company-8" class="mb-20 bg-white p-6 md:p-10 rounded-2xl shadow-md scroll-mt-20">
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-bold border border-gray-300">N-1</span>
+                <span class="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-bold border border-cyan-200">Climate Tech</span>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-black mb-6 leading-tight">アスエネ株式会社</h2>
+            
+            <div class="corporate-overview p-5 rounded-xl mb-8">
+                <p class="text-xs font-bold text-gray-400 mb-2 tracking-widest uppercase">Corporate Overview</p>
+                <table class="w-full text-sm border-collapse">
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left w-1/3 text-gray-600">本社住所</th>
+                        <td class="py-3">東京都港区虎ノ門1-10-5 KDX虎ノ門一丁目ビル WeWork 4階</td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left text-gray-600">設立</th>
+                        <td class="py-3">2019年8月</td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                        <th class="py-3 text-left text-gray-600">従業員数</th>
+                        <td class="py-3">約280名（業務委託含め400名超）</td>
+                    </tr>
+                    <tr>
+                        <th class="py-3 text-left text-gray-600">上場区分</th>
+                        <td class="py-3">未上場（IPO準備中 / 累計調達115億円）</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="mb-8 whitespace-pre-wrap">「次世代によりよい世界を」をミッションに掲げる、日本を代表するクライメートテック（気候変動テック）企業。CO2排出量見える化クラウド「ASUENE」などマルチプロダクトを展開。世界6カ国に拠点を持ち、グローバル展開を加速。累計調達額115億円と圧倒的な財務基盤を誇ります。</div>
+
+            <div class="morich-highlight p-6 rounded-r-xl mb-8">
+                <h3 class="font-bold text-morich-red mb-3">morichオススメPoint</h3>
+                <div class="text-sm font-bold">
+                    ★IPO準備中<br><br>
+                    脱炭素・ESG領域で導入社数No.1という圧倒的な実績。三井住友銀行の事業承継や米国企業のM&Aなど、スタートアップの枠を超えたダイナミックな投資戦略を実行しています。時価総額1兆円という高い山を本気で目指す、最高レベルの人材密度を誇る組織です。
+                </div>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-xl mb-8">
+                <h4 class="font-bold mb-3">代表プロフィール</h4>
+                <p class="font-bold text-sm mb-1">Founder 代表取締役CEO 西和田 浩平 氏</p>
+                <p class="text-sm">慶應義塾大学卒業。三井物産にて再エネ投資・M&Aに従事。ブラジル赴任等を経て2019年アスエネ創業。Forbes 100選出。GX領域の世界的リーダーとしての呼び声高い起業家。</p>
+            </div>
+
+            <div class="mb-8 border-t border-gray-100 pt-6">
+                <h4 class="font-bold mb-4 text-gray-400 uppercase tracking-widest text-xs">Job Information</h4>
+                <div class="bg-white border-2 border-gray-100 rounded-xl p-6">
+                    <h5 class="text-xl font-bold mb-4">CEO室 - M&A・戦略提携チーム(PMI候補)</h5>
+                    <div class="space-y-4 text-sm">
+                        <p><span class="inline-block bg-black text-white px-2 py-0.5 rounded text-xs mr-2">業務内容</span>国内外のM&A実行。案件発掘からDD、バリュエーション、実行後のPMI（出向含む）まで、スピード感のある意思決定を体感。</p>
+                        <p><span class="inline-block bg-black text-white px-2 py-0.5 rounded text-xs mr-2">必須条件</span>商社・投資銀行・ファンド・戦略コンサル等での実務3年以上。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap gap-4">
+                <a href="https://corp.asuene.com/company" target="_blank" class="bg-gray-800 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-black transition">Official Site</a>
+            </div>
+        </section>
+
+        <footer class="text-center py-12 text-gray-400 text-sm">
+            <p>© morich Co., Ltd. All Rights Reserved.</p>
+        </footer>
     </main>
 
-    <footer class="bg-white py-20 border-t text-center">
-        <img src="morich_logo.jpg" alt="morich" class="h-12 mx-auto mb-6 opacity-30">
-        <p class="text-gray-400 text-xs">© morich Inc. All Rights Reserved.</p>
-    </footer>
-
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
